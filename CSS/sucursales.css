@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 700%;
+    background-color: #000;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 20px;
+}
+
+
+.img{
+    height: 420;
+    width: 720;
+}
+
+.mapa{
+    width: 600;
+    height: 450;
+    style: border:0;
+    
+}
