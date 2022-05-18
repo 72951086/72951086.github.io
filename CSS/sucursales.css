@@ -21,15 +21,25 @@ nav{
     padding: 20px;
 }
 
+nav > a{
+    color: #82E4ED;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
 
 .img{
     height: 420;
-    width: 720;
+    width: 100%;
 }
 
 .mapa{
-    width: 600;
+    width: 100%;
     height: 450;
-    style: border:0;
+    style: border 0;
     
 }
