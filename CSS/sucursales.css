@@ -6,11 +6,79 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    display: flexbox;
 
 }
 
 main{
     background-color: rgb(31, 30, 30);
+}
+
+.neon{
+    padding: 15px 30px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    letter-spacing: 4px;
+    display: block;
+
+}
+.neon:hover{
+    background: #82E4ED;
+    box-shadow: 0 0 10px #82E4ED, 0 0 40px #82E4ED, 0 0 80px #82E4ED;
+    transition-delay: 1s;
+}
+.neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #82E4ED );
+}
+.neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:  0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #82E4ED );
+}
+.neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #82E4ED );
+}
+.neon:hover #span2{
+    top: 100%;
+    transition: 2s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #82E4ED );
+}
+.neon:hover #span4{
+    bottom: 100%;
+    transition: 2s;
+    transition-delay: 0.75s;
 }
 
 .part1{
@@ -23,6 +91,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    box-shadow:  0 0 5px 5px #82E4ED;
     
 }
 
@@ -36,6 +105,8 @@ main{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    box-shadow:  0 5px 5px 5px #82E4ED;
+    box-shadow
     
     
 }
@@ -70,6 +141,8 @@ header{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    
+    
 }
 nav{
     text-align: right;
@@ -77,7 +150,7 @@ nav{
 }
 
 nav > a{
-    color: #82E4ED;
+    color:white;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
@@ -122,7 +195,7 @@ center{
 
 
 h1{
-    color: #82E4ED;
+    color: white;
     font-size: 60px;
     font-weight: 100;
     text-align: center;
@@ -143,13 +216,13 @@ h3{
     text-align: center;
 }
 h4{
-    color: #82E4ED;
+    color: white;
     font-size: 20px;
     font-weight: 100;
     text-align: center;
 }
 p{
-    color: #82E4ED;
+    color: white;
     font-size: 10px;
     font-weight: 100;
     text-align: center;
@@ -198,3 +271,40 @@ p{
     color: #82E4ED;
     text-align: center;
 }
+
+.circle{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: #82E4ED;
+    border-radius: 50%;
+    opacity: .5;
+    position: absolute;
+    bottom: 0;
+    box-shadow: #fff;
+   
+    
+    animation: mover 20s alternate infinite;
+}
+
+@keyframes 
+    mover{
+        0%{
+            transform: translate(0);
+            background-color: #82E4ED;
+        }
+        25%{
+            transform: translate(1500%);
+            background-color: #2ef8a0;
+        }
+        50%{
+            transform: translate(1000%, 1000%);
+            background-color: #c501e2;
+        }
+        75%{
+            transform: translate(0, 1000%);
+            background-color: #ff0534;
+        }
+        
+    }
