@@ -20,7 +20,6 @@ main{
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    letter-spacing: 4px;
     display: block;
 
 }
@@ -28,6 +27,9 @@ main{
     background: #82E4ED;
     box-shadow: 0 0 10px #82E4ED, 0 0 40px #82E4ED, 0 0 80px #82E4ED;
     transition-delay: 1s;
+    color: #000;
+    
+
 }
 .neon span{
     position: absolute;
@@ -141,23 +143,21 @@ header{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    
+        
     
 }
 nav{
     text-align: right;
     padding: 20px;
+    
 }
 
-nav > a{
-    color:white;
-    font-weight: 300;
+
+a{
+    color: white;
     text-decoration: none;
+    font-weight: 300;
     margin-right: 10px;
-}
-
-nav > a:hover{
-    text-decoration: underline;
 }
 
 
@@ -185,7 +185,7 @@ footer{
 }
 
 .content-foo a{
-    color: #82E4ED;
+    color: white;
     text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ center{
 
 
 h1{
-    color: white;
+    color: #82E4ED;
     font-size: 60px;
     font-weight: 100;
     text-align: center;
@@ -283,8 +283,6 @@ p{
     position: absolute;
     bottom: 0;
     box-shadow: #fff;
-   
-    
     animation: mover 20s alternate infinite;
 }
 
@@ -307,4 +305,121 @@ p{
             background-color: #ff0534;
         }
         
+    }
+
+    .neon1{
+        padding: 10px 0px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        display: inline-block;
+    
+    }
+    .neon1:hover{
+        background: #82E4ED;
+        box-shadow: 0 0 10px #82E4ED, 0 0 40px #82E4ED, 0 0 80px #82E4ED;
+        transition-delay: .2s;
+        color: white;
+        text-decoration: underline;
+    
+    }
+    .neon1 span{
+        position: absolute;
+        display: block;
+    }
+    #span5{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent, #82E4ED );
+    }
+    .neon:hover #span5{
+        left: 100%;
+        transition: 1s;
+    }
+    #span7{
+        bottom:  0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent, #82E4ED );
+    }
+    .neon:hover #span7{
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    #span6{
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent, #82E4ED );
+    }
+    .neon:hover #span6{
+        top: 100%;
+        transition: 2s;
+        transition-delay: 0.25s;
+    }
+    #span8{
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent, #82E4ED );
+    }
+    .neon:hover #span8{
+        bottom: 100%;
+        transition: 2s;
+        transition-delay: 0.75s;
+    }
+
+    .sometxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;      
+    }
+    
+    .mydiv {
+        position: relative;
+        margin: 10% auto 0;
+        width: 70%;
+        height: 200px;
+        background: linear-gradient(90deg, #000, #323232); 
+    }
+
+    .animate-bg:before, .animate-bg:after {
+        content: '';
+        position: absolute;
+        left: -100px;
+        top: -100px;
+        background: linear-gradient(700deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+        #e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+        background-size: 300%;
+        width: calc(100% + 50px);
+        height: calc(100% + 50px);
+        z-index: -2;
+        animation: BGgradient 15s ease infinite; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    @keyframes BGgradient {
+        0% {
+            background-position: 0% 500%;
+        }
+        50% {
+            background-position: 500% 0%;
+        }
+        100% {
+            background-position: 0% 330%;
+        }
+    }
+    
+    .animate-bg:after {
+        filter: brightness(1.4);
+        filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+        filter: blur(15px);
     }
