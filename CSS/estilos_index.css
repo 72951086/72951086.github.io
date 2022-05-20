@@ -254,18 +254,6 @@ center{
     left: 100%;
     transition: 1s;
 }
-#span3{
-    bottom:  0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent, #82E4ED );
-}
-.neon:hover #span3{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
 #span2{
     top: -100%;
     right: 0;
@@ -290,8 +278,9 @@ center{
     transition: 2s;
     transition-delay: 0.75s;
 }
+
 .neon1{
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
@@ -321,18 +310,8 @@ center{
     left: 100%;
     transition: 1s;
 }
-#span7{
-    bottom:  0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent, #82E4ED );
-}
-.neon:hover #span7{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
+
+
 #span6{
     top: -100%;
     right: 0;
