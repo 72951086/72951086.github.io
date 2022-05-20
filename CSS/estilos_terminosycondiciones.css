@@ -345,3 +345,37 @@ center{
     transition: 2s;
     transition-delay: 0.75s;
 }
+.circle{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: #82E4ED;
+    border-radius: 50%;
+    opacity: .5;
+    position: absolute;
+    bottom: 0;
+    box-shadow: #fff;
+    animation: mover 20s alternate infinite;
+}
+
+@keyframes 
+    mover{
+        0%{
+            transform: translate(0);
+            background-color: #82E4ED;
+        }
+        25%{
+            transform: translate(1100%);
+            background-color: #2ef8a0;
+        }
+        50%{
+            transform: translate(1200%, 1200%);
+            background-color: #c501e2;
+        }
+        75%{
+            transform: translate(0, 1200%);
+            background-color: #ff0534;
+        }
+        
+    }
