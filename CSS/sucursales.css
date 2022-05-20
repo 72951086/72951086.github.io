@@ -385,6 +385,7 @@ p{
         width: 70%;
         height: 200px;
         background: linear-gradient(90deg, #000, #323232); 
+        
     }
 
     .animate-bg:before, .animate-bg:after {
