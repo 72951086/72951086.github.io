@@ -15,73 +15,6 @@ main{
     background-color: rgb(31, 30, 30);
 }
 
-.neon{
-    padding: 15px 30px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    display: block;
-
-}
-.neon:hover{
-    background: #82E4ED;
-    box-shadow: 0 0 10px #82E4ED, 0 0 40px #82E4ED, 0 0 80px #82E4ED;
-    transition-delay: 1s;
-    color: #000;
-    
-
-}
-.neon span{
-    position: absolute;
-    display: block;
-}
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent, #82E4ED );
-}
-.neon:hover #span1{
-    left: 100%;
-    transition: 1s;
-}
-/* #span3{
-    bottom:  0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent, #82E4ED );
-} */
-.neon:hover #span3{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-#span2{
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent, #82E4ED );
-}
-.neon:hover #span2{
-    top: 100%;
-    transition: 2s;
-    transition-delay: 0.25s;
-}
-#span4{
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent, #82E4ED );
-}
-.neon:hover #span4{
-    bottom: 100%;
-    transition: 2s;
-    transition-delay: 0.75s;
-}
 
 .part1{
     background-color: black;
@@ -156,11 +89,6 @@ a{
     font-weight: 300;
     margin-right: 10px;
 }
-
-
-
-
-
 footer{
     background: #000;
     padding: 60px 0 30px 0;
@@ -192,10 +120,11 @@ center{
 
 
 h1{
-    color: #82E4ED;
-    font-size: 60px;
+    color: black;
+    font-size: 100px;
     font-weight: 100;
     text-align: center;
+    
 }
 
 h2{
@@ -290,20 +219,76 @@ p{
             background-color: #82E4ED;
         }
         25%{
-            transform: translate(1500%);
+            transform: translate(1100%);
             background-color: #2ef8a0;
         }
         50%{
-            transform: translate(1000%, 1000%);
+            transform: translate(1200%, 1200%);
             background-color: #c501e2;
         }
         75%{
-            transform: translate(0, 1000%);
+            transform: translate(0, 1200%);
             background-color: #ff0534;
         }
         
     }
 
+    .neon{
+        padding: 15px 30px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        display: block;
+    
+    }
+    .neon:hover{
+        background: #82E4ED;
+        box-shadow: 0 0 10px #82E4ED, 0 0 40px #82E4ED, 0 0 80px #82E4ED;
+        transition-delay: 1s;
+        color: #000;
+        
+    
+    }
+    .neon span{
+        position: absolute;
+        display: block;
+    }
+    #span1{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent, #82E4ED );
+    }
+    .neon:hover #span1{
+        left: 100%;
+        transition: 1s;
+    }
+    #span2{
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent, #82E4ED );
+    }
+    .neon:hover #span2{
+        top: 100%;
+        transition: 2s;
+        transition-delay: 0.25s;
+    }
+    #span4{
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent, #82E4ED );
+    }
+    .neon:hover #span4{
+        bottom: 100%;
+        transition: 2s;
+        transition-delay: 0.75s;
+    }
+    
     .neon1{
         padding: 10px 0px;
         text-decoration: none;
@@ -335,18 +320,8 @@ p{
         left: 100%;
         transition: 1s;
     }
-    /* #span7{
-        bottom:  0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(270deg,transparent, #82E4ED );
-    } */
-    .neon:hover #span7{
-        right: 100%;
-        transition: 1s;
-        transition-delay: 0.5s;
-    }
+    
+    
     #span6{
         top: -100%;
         right: 0;
@@ -385,20 +360,23 @@ p{
         width: 70%;
         height: 200px;
         background: linear-gradient(90deg, #000, #323232); 
-        
+        z-index: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 2rem;
     }
 
     .animate-bg:before, .animate-bg:after {
         content: '';
         position: absolute;
-        left: -100px;
-        top: -100px;
+        left: -50px;
+        top: -50px;
         background: linear-gradient(700deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
         #e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
-        background-size: 300%;
+        background-size: 500%;
         width: calc(100% + 50px);
         height: calc(100% + 50px);
-        z-index: -2;
+        z-index: -5;
         animation: BGgradient 15s ease infinite; 
         border-radius: 10px;
         overflow: hidden;
@@ -412,7 +390,7 @@ p{
             background-position: 500% 0%;
         }
         100% {
-            background-position: 0% 330%;
+            background-position: 0% 270%;
         }
     }
     
